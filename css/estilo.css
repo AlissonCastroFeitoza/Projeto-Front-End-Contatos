@@ -1,0 +1,157 @@
+/*
+* 
+* @author Alisson Castro
+*/
+
+/* Layout */ 
+
+
+/* Barra de navegação 
+-----------------------*/
+nav.navbar-azul {
+	padding: 15px 0;
+	background: rgba(19, 75, 122);
+}
+
+.aumentar {
+	width: 550px;
+}
+
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+
+/*****Parte do menu Lateral com botão****/
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #fafafa;
+}
+
+a,
+a:hover,
+a:focus {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.wrapper {
+	display: flex;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+#sidebar {
+	min-width: 250px;
+	max-width: 250px;
+	background: #6d7fcc;
+	color: #fff;
+}
+
+
+
+#sidebar .sidebar-header { /* ajusta tamanho do titulo de menu lateral e coloca espaço interno*/
+	margin-left: -1500px;
+	padding: 20px;
+	background: #6d7fcc;
+}
+
+
+
+#sidebar ul li a{ /* configurações dos links de opções */
+	padding: 10px 0px 10px 15px;
+	font-size: 1.1em;
+	display: block;
+	background: #6d7fcc;
+}
+
+#sidebar ul li a:hover{ /* coloca cor no fundo e links quando passa encima */
+	color: #7385D5;
+	background: #fff;
+}
+
+
+#content {
+	width: 100%;
+	padding: 20px;
+	min-height: 90vh;
+	transition: all 0.3s;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+@media(max-width: 768px){
+	#sidebar {
+		margin-left: -250px;
+	}
+
+	#sidebar.active {
+        margin-left: 0;
+	}
+
+	#sidebar-collapse h4{
+         display: none;
+	}
+}
+/*****Seção Principal da parte de Contatos****/
+
+.linha {
+	border-bottom: 1px solid rgba(211, 211, 211, 0.8);
+	margin-top: 25px;
+}
+
+.linha-edicao {
+	border-bottom: 1px solid rgba(211, 211, 211, 0.8);
+	margin-top: 25px;
+}
+
+
+
+/*formatando os contatos */
+
+div .lista-contatos {
+	margin-top: 30px;
+
+}
+
+div .lista-contatos:hover {
+	background: rgba(211, 211, 211, 0.8);
+}
+
+div .lista-contatos a{
+   display: block;
+   padding: 15px;
+   color: black;
+}
+
+#home #navegacao .home a, #criar #navegacao .criar a,#editar #navegacao .editar a,#excluir #navegacao .excluir a,#listar #navegacao .listar a{
+	background-color: #fff;
+	color: #7385D5;
+}
+
+/* ajustando imagens */
+
+ .ajuste{
+   margin-right: 15px;
+}
+
+.formulario {
+	margin-top: 30px;
+	padding: 20px;
+}
+
+.centralizar {
+	text-align: center;
+}
+
+.letra {
+	font-size: 20px;
+}
